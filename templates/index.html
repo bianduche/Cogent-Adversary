@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cogent-Adversary 实验系统</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="student-container" id="studentContainer">
+        <!-- 左侧视频区 -->
+        <div class="video-panel">
+            <div class="video-placeholder" id="videoPlaceholder">
+                <div>📹 课程视频播放区</div>
+                <div style="margin-top:12px;font-size:14px;opacity:0.7;">（请等待视频播放完毕后开始提问）</div>
+                <button onclick="endVideo()" style="margin-top:20px;padding:10px 24px;background:#28a745;color:#fff;border:none;border-radius:4px;cursor:pointer;">
+                    模拟视频播放结束
+                </button>
+            </div>
+            <div class="video-progress" id="videoProgress" style="display:none;">
+                课时 <span id="currentSession">1</span> / 10
+            </div>
+
+            <!-- 知识路径可视化开关 -->
+            <div class="kg-toggle" id="kgToggle" style="display:none;">
+                <button onclick="toggleKG()">🔍 显示知识路径</button>
+            </div>
+        </div>
+
+        <!-- 右侧聊天区 -->
+        <div class="chat-panel" id="chatPanel">
+            <div class="chat-header">
+                <div>
+                    <span id="headerTitle">AI 学习助手</span>
+                    <span class="session-info" id="headerInfo"> | 组别: SA | 学生: S001</span>
+                </div>
+                <div style="font-size:12px;opacity:0.8;" id="turnInfo">第 0 轮</div>
+            </div>
+
+            <!-- SA单Agent模式 -->
+            <div class="chat-messages sa-mode" id="saChat" style="display:none;">
+                <!-- 消息将动态插入 -->
+            </div>
+
+            <!-- FA/RA/CA双Agent模式 -->
+            <div class="dual-mode" id="dualChat" style="display:none;">
+                <div class="agent-window">
+                    <div class="agent-header mentor-header">
+                        <div class="agent-avatar mentor-avatar">🤖</div>
+                        <span>苏格拉底导师 (Mentor)</span>
+                        <span class="alpha-tag" id="alphaTag" style="display:none;">强度: 0.00</span>
+                    </div>
+                    <div class="agent-messages" id="mentorMessages"></div>
+                </div>
+                <div class="agent-window">
+                    <div class="agent-header devil-header">
+                        <div class="agent-avatar devil-avatar">😈</div>
+                        <span>质疑者 (Devil's Advocate)</span>
+                    </div>
+                    <div class="agent-messages" id="devilMessages"></div>
+                </div>
+            </div>
+
+            <!-- 输入区 -->
+            <div class="chat-input-area">
+                <textarea id="userInput" rows="2" placeholder="请输入你的问题..." onkeydown="if(event.key==='Enter' && !event.shiftKey){event.preventDefault();sendMessage();}"></textarea>
+                <button id="sendBtn" onclick="sendMessage()">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 知识路径弹窗 -->
+    <div class="kg-modal" id="kgModal">
+        <div class="kg-modal-content">
+            <div class="kg-modal-header">
+                <h3>知识路径可视化</h3>
+                <button onclick="toggleKG()" style="background:none;border:none;font-size:20px;cursor:pointer;">×</button>
+            </div>
+            <div class="kg-path kg-path-a">
+                <strong>🟢 导师路径 (Path A)</strong>
+                <div id="pathAContent" style="margin-top:8px;"></div>
+            </div>
+            <div class="kg-path kg-path-b">
+                <strong>🟠 质疑者路径 (Path B)</strong>
+                <div id="pathBContent" style="margin-top:8px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

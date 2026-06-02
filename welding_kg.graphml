@@ -1,0 +1,1482 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d1" for="node" attr.name="node_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="D0">
+  <data key="d0">焊接裂纹</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D1">
+  <data key="d0">热裂纹</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D2">
+  <data key="d0">冷裂纹</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D3">
+  <data key="d0">再热裂纹</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D4">
+  <data key="d0">层状撕裂</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D5">
+  <data key="d0">气孔</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D6">
+  <data key="d0">氢气孔</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D7">
+  <data key="d0">氮气孔</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D8">
+  <data key="d0">一氧化碳气孔</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D9">
+  <data key="d0">夹渣</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D10">
+  <data key="d0">氧化物夹渣</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D11">
+  <data key="d0">硫化物夹渣</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D12">
+  <data key="d0">未焊透</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D13">
+  <data key="d0">未熔合</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D14">
+  <data key="d0">咬边</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D15">
+  <data key="d0">焊瘤</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D16">
+  <data key="d0">塌陷</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D17">
+  <data key="d0">烧穿</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D18">
+  <data key="d0">飞溅</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D19">
+  <data key="d0">应力腐蚀裂纹</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D20">
+  <data key="d0">疲劳裂纹</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D21">
+  <data key="d0">晶间腐蚀</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="D22">
+  <data key="d0">点蚀</data>
+  <data key="d1">Defect</data>
+</node>
+<node id="C0">
+  <data key="d0">焊接电流过大</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C1">
+  <data key="d0">焊接电流过小</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C2">
+  <data key="d0">焊接速度过快</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C3">
+  <data key="d0">焊接速度过慢</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C4">
+  <data key="d0">电弧电压过高</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C5">
+  <data key="d0">电弧电压过低</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C6">
+  <data key="d0">预热温度不足</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C7">
+  <data key="d0">层间温度过高</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C8">
+  <data key="d0">冷却速度过快</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C9">
+  <data key="d0">冷却速度过慢</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C10">
+  <data key="d0">氢含量过高</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C11">
+  <data key="d0">硫含量过高</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C12">
+  <data key="d0">磷含量过高</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C13">
+  <data key="d0">碳当量过高</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C14">
+  <data key="d0">拘束度过大</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C15">
+  <data key="d0">残余应力集中</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C16">
+  <data key="d0">母材杂质过多</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C17">
+  <data key="d0">焊丝污染</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C18">
+  <data key="d0">保护气体流量不足</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C19">
+  <data key="d0">保护气体纯度低</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C20">
+  <data key="d0">坡口角度不当</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C21">
+  <data key="d0">钝边过大</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C22">
+  <data key="d0">间隙过小</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C23">
+  <data key="d0">错边量过大</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C24">
+  <data key="d0">热影响区脆化</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C25">
+  <data key="d0">晶粒粗化</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C26">
+  <data key="d0">马氏体相变</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C27">
+  <data key="d0">淬硬组织</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C28">
+  <data key="d0">焊接顺序不当</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C29">
+  <data key="d0">装配间隙不均</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C30">
+  <data key="d0">焊接变形</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="C31">
+  <data key="d0">温度梯度大</data>
+  <data key="d1">CauseFactor</data>
+</node>
+<node id="P0">
+  <data key="d0">焊接电流</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P1">
+  <data key="d0">焊接电压</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P2">
+  <data key="d0">焊接速度</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P3">
+  <data key="d0">送丝速度</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P4">
+  <data key="d0">保护气体流量</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P5">
+  <data key="d0">预热温度</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P6">
+  <data key="d0">层间温度</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P7">
+  <data key="d0">后热温度</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P8">
+  <data key="d0">热输入</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P9">
+  <data key="d0">焊接热循环</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P10">
+  <data key="d0">电极直径</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P11">
+  <data key="d0">焊丝直径</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P12">
+  <data key="d0">坡口角度</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P13">
+  <data key="d0">钝边尺寸</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P14">
+  <data key="d0">根部间隙</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P15">
+  <data key="d0">焊接位置</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P16">
+  <data key="d0">焊接方向</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P17">
+  <data key="d0">摆动幅度</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P18">
+  <data key="d0">停留时间</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="P19">
+  <data key="d0">脉冲频率</data>
+  <data key="d1">ProcessParameter</data>
+</node>
+<node id="M0">
+  <data key="d0">低碳钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M1">
+  <data key="d0">中碳钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M2">
+  <data key="d0">高碳钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M3">
+  <data key="d0">低合金钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M4">
+  <data key="d0">不锈钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M5">
+  <data key="d0">奥氏体不锈钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M6">
+  <data key="d0">马氏体不锈钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M7">
+  <data key="d0">铝合金</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M8">
+  <data key="d0">钛合金</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M9">
+  <data key="d0">镍基合金</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M10">
+  <data key="d0">铜合金</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M11">
+  <data key="d0">Q235钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M12">
+  <data key="d0">Q345钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M13">
+  <data key="d0">16Mn钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M14">
+  <data key="d0">304不锈钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M15">
+  <data key="d0">316不锈钢</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M16">
+  <data key="d0">焊条</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M17">
+  <data key="d0">焊丝</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M18">
+  <data key="d0">焊剂</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M19">
+  <data key="d0">保护气体</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M20">
+  <data key="d0">氩气</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M21">
+  <data key="d0">二氧化碳</data>
+  <data key="d1">Material</data>
+</node>
+<node id="M22">
+  <data key="d0">混合气体</data>
+  <data key="d1">Material</data>
+</node>
+<node id="T0">
+  <data key="d0">目视检测</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T1">
+  <data key="d0">射线检测</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T2">
+  <data key="d0">超声波检测</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T3">
+  <data key="d0">磁粉检测</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T4">
+  <data key="d0">渗透检测</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T5">
+  <data key="d0">涡流检测</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T6">
+  <data key="d0">声发射检测</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T7">
+  <data key="d0">红外热成像</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T8">
+  <data key="d0">数字射线成像</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T9">
+  <data key="d0">相控阵超声</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T10">
+  <data key="d0">TOFD检测</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T11">
+  <data key="d0">工业CT</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T12">
+  <data key="d0">金相分析</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T13">
+  <data key="d0">硬度测试</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T14">
+  <data key="d0">拉伸试验</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T15">
+  <data key="d0">冲击试验</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T16">
+  <data key="d0">弯曲试验</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="T17">
+  <data key="d0">宏观腐蚀检验</data>
+  <data key="d1">DetectionMethod</data>
+</node>
+<node id="V0">
+  <data key="d0">控制氢来源</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V1">
+  <data key="d0">焊前预热</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V2">
+  <data key="d0">焊后热处理</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V3">
+  <data key="d0">降低冷却速度</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V4">
+  <data key="d0">选用低氢焊条</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V5">
+  <data key="d0">清理坡口油污</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V6">
+  <data key="d0">优化焊接顺序</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V7">
+  <data key="d0">锤击消应力</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V8">
+  <data key="d0">采用退火处理</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V9">
+  <data key="d0">控制层间温度</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V10">
+  <data key="d0">选用合适焊丝</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V11">
+  <data key="d0">调整保护气体</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V12">
+  <data key="d0">减小焊接拘束</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V13">
+  <data key="d0">增加根部间隙</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V14">
+  <data key="d0">打磨过渡圆滑</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V15">
+  <data key="d0">采用脉冲焊接</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V16">
+  <data key="d0">控制热输入</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V17">
+  <data key="d0">细化晶粒处理</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V18">
+  <data key="d0">添加稳定化元素</data>
+  <data key="d1">Prevention</data>
+</node>
+<node id="V19">
+  <data key="d0">表面涂层保护</data>
+  <data key="d1">Prevention</data>
+</node>
+<edge source="D0" target="C1">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D0" target="C17">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D0" target="T0">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D0" target="T12">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D0" target="T8">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D0" target="V8">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D0" target="V1">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D0" target="V2">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D1" target="C14">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D1" target="C8">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D1" target="C6">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D1" target="T9">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D1" target="T13">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D1" target="T15">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D1" target="V13">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D1" target="V8">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D1" target="V1">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D1" target="V0">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D2" target="C27">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D2" target="C2">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D2" target="T6">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D2" target="T9">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D2" target="V4">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D2" target="V8">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D2" target="V5">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D3" target="C5">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D3" target="C13">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D3" target="T1">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D3" target="T17">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D3" target="V14">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D3" target="V17">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D3" target="V13">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D3" target="V0">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D4" target="C1">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D4" target="C12">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D4" target="C26">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D4" target="T10">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D4" target="T1">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D4" target="T16">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D4" target="T9">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D4" target="V2">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D4" target="V4">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D5" target="C28">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D5" target="C17">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D5" target="C0">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D5" target="T16">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D5" target="T17">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D5" target="T5">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D5" target="V1">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D5" target="V11">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D5" target="V17">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D5" target="V4">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D6" target="C27">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D6" target="C21">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D6" target="C17">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D6" target="T16">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D6" target="T2">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D6" target="V4">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D6" target="V1">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D6" target="V9">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D7" target="C13">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D7" target="C21">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D7" target="C6">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D7" target="T2">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D7" target="T17">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D7" target="V1">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D7" target="V11">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D7" target="V6">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D8" target="C24">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D8" target="C6">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D8" target="T7">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D8" target="T12">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D8" target="T3">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D8" target="T14">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D8" target="V7">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D8" target="V3">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D8" target="V11">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D8" target="V13">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D9" target="C22">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D9" target="C16">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D9" target="C2">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D9" target="C29">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D9" target="T7">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D9" target="T1">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D9" target="T2">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D9" target="T6">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D9" target="V4">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D9" target="V7">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D9" target="V5">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D9" target="V17">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D10" target="C24">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D10" target="C5">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D10" target="T16">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D10" target="T10">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D10" target="T8">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D10" target="T3">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D10" target="V0">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D10" target="V5">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D10" target="V10">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D11" target="C23">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D11" target="C12">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D11" target="C4">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D11" target="C2">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D11" target="T10">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D11" target="T7">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D11" target="T8">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D11" target="T6">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D11" target="V7">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D11" target="V8">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D11" target="V5">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D12" target="C18">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D12" target="C5">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D12" target="C14">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D12" target="T9">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D12" target="T14">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D12" target="V3">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D12" target="V12">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D12" target="V1">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D12" target="V15">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D13" target="C24">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D13" target="C17">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D13" target="T2">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D13" target="T0">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D13" target="T14">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D13" target="V6">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D13" target="V14">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D14" target="C23">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D14" target="C10">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D14" target="C22">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D14" target="C13">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D14" target="C17">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D14" target="T3">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D14" target="T2">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D14" target="T6">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D14" target="T8">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D14" target="V9">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D14" target="V7">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D14" target="V18">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D15" target="C10">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D15" target="C15">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D15" target="T4">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D15" target="T11">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D15" target="T2">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D15" target="V6">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D15" target="V12">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D16" target="C29">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D16" target="C24">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D16" target="C17">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D16" target="T11">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D16" target="T9">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D16" target="V8">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D16" target="V2">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D16" target="V19">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D17" target="C20">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D17" target="C3">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D17" target="C14">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D17" target="T14">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D17" target="T9">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D17" target="V16">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D17" target="V12">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D17" target="V17">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D18" target="C20">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D18" target="C25">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D18" target="T16">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D18" target="T0">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D18" target="T9">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D18" target="T14">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D18" target="V0">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D18" target="V3">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D18" target="V8">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D19" target="C4">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D19" target="C13">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D19" target="C20">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D19" target="C31">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D19" target="T3">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D19" target="T4">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D19" target="T8">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D19" target="T1">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D19" target="V18">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D19" target="V8">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D20" target="C29">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D20" target="C9">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D20" target="C16">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D20" target="C8">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D20" target="C15">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D20" target="T17">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D20" target="T4">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D20" target="V3">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D20" target="V13">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D21" target="C27">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D21" target="C25">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D21" target="C23">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D21" target="C14">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D21" target="T9">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D21" target="T6">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D21" target="T10">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D21" target="V10">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D21" target="V13">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D21" target="V16">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D22" target="C31">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D22" target="C5">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D22" target="C3">
+  <data key="d2">causes</data>
+</edge>
+<edge source="D22" target="T8">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D22" target="T16">
+  <data key="d2">detected_by</data>
+</edge>
+<edge source="D22" target="V12">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="D22" target="V18">
+  <data key="d2">prevents</data>
+</edge>
+<edge source="C0" target="P4">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C0" target="C6">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C1" target="P5">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C1" target="P13">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C1" target="P2">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C1" target="M6">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C2" target="P12">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C2" target="P14">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C2" target="M18">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C2" target="C15">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C3" target="P8">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C3" target="P17">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C3" target="P0">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C3" target="M7">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C3" target="C15">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C4" target="P3">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C4" target="P17">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C4" target="P8">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C4" target="M13">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C5" target="P10">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C5" target="P3">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C5" target="P9">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C5" target="C18">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C6" target="P5">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C6" target="P14">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C7" target="P8">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C8" target="P5">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C8" target="P16">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C8" target="P3">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C9" target="P9">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C9" target="P16">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C9" target="P6">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C9" target="C1">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C10" target="P11">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C10" target="M21">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C11" target="P17">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C11" target="M20">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C11" target="C29">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C12" target="P0">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C12" target="P10">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C12" target="P15">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C12" target="C24">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C13" target="P3">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C14" target="P9">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C14" target="P7">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C14" target="C12">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C15" target="P7">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C15" target="M7">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C15" target="C19">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C15" target="C9">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C16" target="P2">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C16" target="P19">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C16" target="P15">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C17" target="P17">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C17" target="M4">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C18" target="P4">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C18" target="C13">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C19" target="P15">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C19" target="P17">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C19" target="P5">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C20" target="P16">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C20" target="P13">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C21" target="P17">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C21" target="M14">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C21" target="C5">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C22" target="P6">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C22" target="P9">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C22" target="P12">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C22" target="M17">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C23" target="P11">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C23" target="P14">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C23" target="P16">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C24" target="P3">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C24" target="P7">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C24" target="M17">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C25" target="P2">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C25" target="M2">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C26" target="P0">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C26" target="P18">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C26" target="M7">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C27" target="P7">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C27" target="P18">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C27" target="P19">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C27" target="C20">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C27" target="C14">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C28" target="P2">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C28" target="C13">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C29" target="P1">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C29" target="P7">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C29" target="P2">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C29" target="C28">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C29" target="C26">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C30" target="P10">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C30" target="C10">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C30" target="C4">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="C31" target="P16">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="C31" target="C25">
+  <data key="d2">contradicts</data>
+</edge>
+<edge source="V4" target="P6">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="V7" target="P10">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="V8" target="P3">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="V9" target="P9">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="V11" target="P10">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="V16" target="P5">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="V17" target="P9">
+  <data key="d2">influenced_by</data>
+</edge>
+<edge source="V19" target="P9">
+  <data key="d2">influenced_by</data>
+</edge>
+</graph></graphml>

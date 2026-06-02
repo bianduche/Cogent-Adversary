@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教师监控面板 - Cogent-Adversary</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="teacher-body">
+    <div class="dashboard-header">
+        <h1>📊 Cogent-Adversary 教师监控面板</h1>
+        <button class="export-btn" onclick="exportData()">📥 导出CSV数据</button>
+    </div>
+
+    <div class="dashboard-grid">
+        <!-- 班级热力图 -->
+        <div class="card">
+            <h3>班级认知状态热力图</h3>
+            <p style="font-size:12px;color:#666;margin-bottom:12px;">
+                S1=初始(红) | S2=困惑(黄) | S3=部分掌握(橙) | S4=完全掌握(绿)
+            </p>
+            <div style="overflow-x:auto;">
+                <table class="heatmap-table" id="heatmapTable">
+                    <thead>
+                        <tr>
+                            <th>学生ID</th>
+                            <th>组别</th>
+                            <th>课时1</th><th>课时2</th><th>课时3</th><th>课时4</th><th>课时5</th>
+                            <th>课时6</th><th>课时7</th><th>课时8</th><th>课时9</th><th>课时10</th>
+                        </tr>
+                    </thead>
+                    <tbody id="heatmapBody">
+                        <tr><td colspan="13" style="text-align:center;color:#999;">加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 预警列表 -->
+        <div class="card">
+            <h3>⚠️ NASA-TLX 高负荷预警 (>75)</h3>
+            <ul class="alert-list" id="alertList">
+                <li>暂无预警数据</li>
+            </ul>
+        </div>
+
+        <!-- 对话抽样 -->
+        <div class="card" style="grid-column: 1 / -1;">
+            <h3>💬 最近对话抽样</h3>
+            <div class="chat-sample" id="chatSample">
+                <div style="text-align:center;color:#999;padding:20px;">加载中...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function loadDashboard() {
+            try {
+                const resp = await fetch("/api/teacher/dashboard");
+                const data = await resp.json();
+
+                // 渲染热力图
+                const tbody = document.getElementById("heatmapBody");
+                tbody.innerHTML = "";
+                for (const [sid, info] of Object.entries(data.heatmap)) {
+                    const tr = document.createElement("tr");
+                    tr.innerHTML = `<td><strong>${sid}</strong></td><td>${info.group}</td>`;
+                    for (let s = 1; s <= 10; s++) {
+                        const state = info.sessions[s] || 0;
+                        const stateClass = state === 1 ? "state-s1" : state === 2 ? "state-s2" : state === 3 ? "state-s3" : state === 4 ? "state-s4" : "";
+                        const stateText = state === 0 ? "-" : `S${state}`;
+                        tr.innerHTML += `<td class="${stateClass}">${stateText}</td>`;
+                    }
+                    tbody.appendChild(tr);
+                }
+                if (tbody.innerHTML === "") {
+                    tbody.innerHTML = `<tr><td colspan="13" style="text-align:center;color:#999;">暂无数据</td></tr>`;
+                }
+
+                // 渲染预警
+                const alertList = document.getElementById("alertList");
+                if (data.alerts.length > 0) {
+                    alertList.innerHTML = data.alerts.map(a => 
+                        `<li>学生 <strong>${a.student_id}</strong> | 课时${a.session} | 得分: <strong>${a.score.toFixed(1)}</strong></li>`
+                    ).join("");
+                } else {
+                    alertList.innerHTML = "<li>暂无高负荷预警 👍</li>";
+                }
+
+                // 渲染对话
+                const chatDiv = document.getElementById("chatSample");
+                if (data.chats.length > 0) {
+                    chatDiv.innerHTML = data.chats.map(c => `
+                        <div class="chat-sample-item">
+                            <span class="sid">${c.student_id}</span> 
+                            <span style="color:#999;">${c.time}</span><br>
+                            <strong>问:</strong> ${c.question}<br>
+                            <strong>导师:</strong> ${c.mentor}<br>
+                            ${c.devil ? `<strong>质疑:</strong> ${c.devil}<br>` : ""}
+                        </div>
+                    `).join("");
+                } else {
+                    chatDiv.innerHTML = `<div style="text-align:center;color:#999;padding:20px;">暂无对话数据</div>`;
+                }
+            } catch (e) {
+                console.error("加载Dashboard失败:", e);
+            }
+        }
+
+        function exportData() {
+            window.open("/api/teacher/export", "_blank");
+        }
+
+        // 每5秒刷新
+        loadDashboard();
+        setInterval(loadDashboard, 5000);
+    </script>
+</body>
+</html>

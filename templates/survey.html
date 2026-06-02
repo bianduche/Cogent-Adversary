@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课后问卷 - NASA-TLX</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h2>📝 课后负荷评估问卷 (NASA-TLX)</h2>
+        <p class="subtitle">学生: {{ sid }} | 课时: {{ session }} / 10</p>
+
+        <form id="tlxForm">
+            <div class="survey-item">
+                <label>1. 脑力需求 (Mental Demand)</label>
+                <p class="desc">本次学习对你的思考和决策要求有多高？（0=非常低，100=非常高）</p>
+                <div class="slider-container">
+                    <input type="range" name="mental_demand" min="0" max="100" value="50" oninput="this.nextElementSibling.textContent=this.value">
+                    <span class="slider-value">50</span>
+                </div>
+            </div>
+
+            <div class="survey-item">
+                <label>2. 时间压力 (Temporal Demand)</label>
+                <p class="desc">你感到时间紧迫的程度如何？（0=非常低，100=非常高）</p>
+                <div class="slider-container">
+                    <input type="range" name="temporal_demand" min="0" max="100" value="50" oninput="this.nextElementSibling.textContent=this.value">
+                    <span class="slider-value">50</span>
+                </div>
+            </div>
+
+            <div class="survey-item">
+                <label>3. 努力程度 (Effort)</label>
+                <p class="desc">为了完成学习任务，你付出了多少努力？（0=非常少，100=非常多）</p>
+                <div class="slider-container">
+                    <input type="range" name="effort" min="0" max="100" value="50" oninput="this.nextElementSibling.textContent=this.value">
+                    <span class="slider-value">50</span>
+                </div>
+            </div>
+
+            <div class="survey-item">
+                <label>4. 挫败感 (Frustration)</label>
+                <p class="desc">你在学习过程中感到多沮丧/挫败？（0=非常低，100=非常高）</p>
+                <div class="slider-container">
+                    <input type="range" name="frustration" min="0" max="100" value="50" oninput="this.nextElementSibling.textContent=this.value">
+                    <span class="slider-value">50</span>
+                </div>
+            </div>
+
+            <div class="survey-item">
+                <label>5. 绩效满意度 (Performance)</label>
+                <p class="desc">你对自己在本课时学习表现的满意程度？（0=非常不满意，100=非常满意）<br><em>注：此题反向计分</em></p>
+                <div class="slider-container">
+                    <input type="range" name="performance" min="0" max="100" value="50" oninput="this.nextElementSibling.textContent=this.value">
+                    <span class="slider-value">50</span>
+                </div>
+            </div>
+
+            <div class="survey-item">
+                <label>6. 操纵检查题</label>
+                <p class="desc">你是否听说过其他组的AI交互方式？</p>
+                <div style="display:flex;gap:20px;margin-top:8px;">
+                    <label><input type="radio" name="manipulation_check" value="no" checked> 没有听说过</label>
+                    <label><input type="radio" name="manipulation_check" value="yes_vague"> 似乎听说过但不清楚</label>
+                    <label><input type="radio" name="manipulation_check" value="yes_clear"> 清楚知道其他组的设置</label>
+                </div>
+            </div>
+
+            <button type="submit" class="survey-submit">提交问卷</button>
+        </form>
+
+        <div id="submitResult" style="margin-top:16px;text-align:center;"></div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const sid = urlParams.get("sid") || "S001";
+        const session = urlParams.get("session") || "1";
+
+        document.getElementById("tlxForm").addEventListener("submit", async function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const data = {
+                student_id: sid,
+                session: parseInt(session),
+                mental_demand: parseInt(formData.get("mental_demand")),
+                temporal_demand: parseInt(formData.get("temporal_demand")),
+                effort: parseInt(formData.get("effort")),
+                frustration: parseInt(formData.get("frustration")),
+                performance: parseInt(formData.get("performance"))
+            };
+
+            try {
+                const resp = await fetch("/api/tlx/submit", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify(data)
+                });
+                const result = await resp.json();
+                if (result.status === "ok") {
+                    document.getElementById("submitResult").innerHTML = 
+                        `<div style="color:#28a745;font-size:16px;">✅ 问卷提交成功！加权得分: ${result.weighted_score.toFixed(1)}</div>
+                         <div style="margin-top:12px;"><button onclick="nextSession()" style="padding:10px 24px;background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer;">进入下一课时</button></div>`;
+                    document.getElementById("tlxForm").style.display = "none";
+                }
+            } catch (err) {
+                document.getElementById("submitResult").innerHTML = 
+                    `<div style="color:#dc3545;">提交失败，请重试</div>`;
+            }
+        });
+
+        function nextSession() {
+            const next = parseInt(session) + 1;
+            if (next <= 10) {
+                window.location.href = `/?group=${urlParams.get("group") || "SA"}&sid=${sid}&session=${next}`;
+            } else {
+                alert("恭喜！你已完成全部10个课时的学习。");
+            }
+        }
+    </script>
+</body>
+</html>

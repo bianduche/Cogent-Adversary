@@ -1,0 +1,12 @@
+{
+  "openai_api_key": "sk-61OrspJWzPsZpd14Fh6xJFbw7iVfvo1L76Ab8IEoHYNpPnwA",
+  "base_url": "https://api.moonshot.cn/v1",
+  "model": "moonshot-v1-8k",
+  "db_path": "experiment.db",
+  "kg_path": "welding_kg.graphml",
+  "csdi_params": "csdi_params.json",
+  "host": "0.0.0.0",
+  "port": 5001,
+  "max_retry": 2,
+  "accl_threshold": 0.2
+}
